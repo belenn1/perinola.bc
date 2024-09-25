@@ -7,8 +7,7 @@ class Apuesta:
   return f"Apuesta: {self.fichas}"
  
  def ponerFicha(self, cuantas  = 1):
-  if cuantas < self.fichas :
-   raise ValueError("ERROR")
+  self.fichas += cuantas
  
  def tomarFicha(self, cuantas  = 1):
   if cuantas > self.fichas :
